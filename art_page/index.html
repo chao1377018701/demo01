@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>这是用express自定义的模板</h1>
+    <p>姓名:{{name}}</p>
+    <p>年龄:{{age}}</p>
+    <p>爱好:{{each hobby}}
+            <input type="checkbox" name="hobby">{{$value}}
+        {{/each}}
+    </p>
+</body>
+</html>
