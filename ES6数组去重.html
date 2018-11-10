@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		let arr=[1,1,2,3,2,1,4,3,5]
+		let array=Array.from(new Set(arr));
+		console.log(array);
+
+
+		//ES5数组去重
+		var newArr=[];
+		arr.forEach(function(value){
+			if(newArr.indexOf(value)==-1){
+				newArr.push(value)
+			}
+		})
+		console.log(newArr)
+	</script>
+</body>
+</html>
